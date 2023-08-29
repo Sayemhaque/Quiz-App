@@ -2,7 +2,6 @@ import {  useEffect, useState } from 'react'
 import './App.css'
 import Loader from './pages/Loader/Loader'
 import StartGame from './pages/GameStart/StartGame'
-import styled from 'styled-components';
 
 function App() {
   const [data,setData] = useState({})
@@ -22,21 +21,14 @@ function App() {
   },[])
 
 
-const MainHolder = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #107fc9;
-`;
-
   return (
-     <MainHolder>
+     <div>
       {loading ? <Loader/> : 
        <div>
       <StartGame/>
        </div>
       }
-     </MainHolder>
+     </div>
   )
 }
 

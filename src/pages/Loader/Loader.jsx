@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import loaderImage from "../../assets/loader.png"
-import { MainLoader } from "./style";
+
 
 
 const Loader = () => {
@@ -23,11 +23,10 @@ const Loader = () => {
 
 
   return (
-    <MainLoader>
+    <div className="flex justify-center items-center flex-col h-[770px]">
       <img src={loaderImage} alt="" />
-      <br />
-      <span>{progress}%</span>
-    </MainLoader>
+      <span className="text-[30px] text-white">{progress}%</span>
+    </div>
   );
 };
 
