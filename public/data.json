@@ -4,45 +4,45 @@
 			"thumb": [
 				{
 					"_name": "Subcategory",
-					"__text": "assets/item_thumb_0.svg"
+					"__text": "/src/assets/item_thumb_0.svg"
 				},
 				{
 					"_name": "Subcategory 1",
 					"_parent": "Subcategory",
-					"__text": "assets/item_thumb_0.svg"
+					"__text": "/src/assets/item_thumb_0.svg"
 				},
 				{
 					"_name": "Subcategory 2",
 					"_parent": "Subcategory 1",
-					"__text": "assets/item_thumb_0.svg"
+					"__text": "/src/assets/item_thumb_0.svg"
 				},
 				{
 					"_name": "Drag and Drop",
-					"__text": "assets/item_thumb_0.svg"
+					"__text": "/src/assets/item_thumb_0.svg"
 				},
 				{
 					"_name": "IQ Questions (Audio)",
-					"__text": "assets/item_thumb_1.svg"
+					"__text": "/src/assets/item_thumb_1.svg"
 				},
 				{
 					"_name": "Math Questions",
-					"__text": "assets/item_thumb_2.svg"
+					"__text": "/src/assets/item_thumb_2.svg"
 				},
 				{
 					"_name": "Math Puzzles (Audio)",
-					"__text": "assets/item_thumb_5.svg"
+					"__text": "/src/assets/item_thumb_5.svg"
 				},
 				{
 					"_name": "Multiple Choices",
-					"__text": "assets/item_thumb_6.svg"
+					"__text": "/src/assets/item_thumb_6.svg"
 				},
 				{
 					"_name": "Video",
-					"__text": "assets/item_thumb_4.svg"
+					"__text": "/src/assets/item_thumb_4.svg"
 				},
 				{
 					"_name": "All",
-					"__text": "assets/item_thumb_3.svg"
+					"__text": "/src/assets/item_thumb_3.svg"
 				}
 			]
 		},

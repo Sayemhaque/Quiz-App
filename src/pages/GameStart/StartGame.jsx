@@ -7,6 +7,7 @@ import buttonSoundOn from "../../assets/button_sound_on.svg"
 import buttonSoundOff from "../../assets/button_sound_off.svg"
 import { useState } from "react";
 import useToggle from "../../hooks/useToggle"
+import { Link } from "react-router-dom"
 const StartGame = () => {
     const [option, toggleOption] = useToggle(false);
     const [sound, toogleSound] = useToggle(false)
@@ -48,7 +49,9 @@ const StartGame = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className="flex justify-center items-center cursor-pointer  w-[15%] m-auto mt-[10px]">
+                    <Link to='/category'>
                     <img src={startButton} alt="" />
+                    </Link>
                 </div>
                 <div className="absolute top-4 right-4">
                     <img className="w-14 cursor-pointer h-auto" onClick={toggleOption} src={!option ? buttonOption : buttonOptionClose} alt="" />
