@@ -6,19 +6,13 @@ import buttonFullScreen from "../../assets/button_fullscreen.svg"
 import buttonSoundOn from "../../assets/button_sound_on.svg"
 import buttonSoundOff from "../../assets/button_sound_off.svg"
 import { useState } from "react";
+import useToggle from "../../hooks/useToggle"
 const StartGame = () => {
-    const [show, setShow] = useState(false);
-    const [sound, setSound] = useState(false)
+    const [option, toggleOption] = useToggle(false);
+    const [sound, toogleSound] = useToggle(false)
     const [isFullScreen, setIsFullScreen] = useState(false);
 
-    const handleShow = () => {
-        setShow(!show)
-    }
-
-    const handleSound = () => {
-        setSound(!sound)
-    }
-
+  
     const toggleFullScreen = () => {
         const element = document.documentElement;
 
@@ -57,10 +51,10 @@ const StartGame = () => {
                     <img src={startButton} alt="" />
                 </div>
                 <div className="absolute top-4 right-4">
-                    <img className="w-14 cursor-pointer h-auto" onClick={handleShow} src={!show ? buttonOption : buttonOptionClose} alt="" />
-                    <div className={show ? "block" : "hidden"}>
+                    <img className="w-14 cursor-pointer h-auto" onClick={toggleOption} src={!option ? buttonOption : buttonOptionClose} alt="" />
+                    <div className={option ? "block" : "hidden"}>
                         <img className="w-14 cursor-pointer h-auto mt-4" onClick={toggleFullScreen} src={buttonFullScreen} alt="" />
-                        <img onClick={handleSound} className="w-14 cursor-pointer h-auto mt-4" src={!sound ? buttonSoundOff : buttonSoundOn} alt="" />
+                        <img onClick={toogleSound} className="w-14 cursor-pointer h-auto mt-4" src={!sound ? buttonSoundOff : buttonSoundOn} alt="" />
                     </div>
                 </div>
             </div>
